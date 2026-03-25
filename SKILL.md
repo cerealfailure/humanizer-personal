@@ -1,12 +1,11 @@
 ---
 name: humanizer
-version: 4.0.0
+version: 5.0.0
 description: |
   Strip AI writing patterns and rewrite with real human voice. Trained on
-  personal writing samples plus the voices of Galloway, Senra, frankdegods,
-  Kiriakou, Elson, Taleb, Paul Graham. Gravitas with humility. A young guy
-  who reads too much and isn't afraid to say something wrong on the way to
-  saying something right.
+  personal writing samples plus Galloway, Senra, frankdegods, Kiriakou,
+  Elson, Taleb, Paul Graham, Damodaran. Gravitas with humility. A young
+  guy who reads too much and writes like he means it.
 allowed-tools:
   - Read
   - Write
@@ -58,6 +57,8 @@ Study these writers. Absorb the specific move each one does well. Fold it into t
 
 **Paul Graham** writes in spoken language. "Here's a simple trick for getting more people to read what you write: write in spoken language." He discovers ideas by writing them, not before. A sentence in a Paul Graham essay reads like someone thinking aloud and discovering something mid-sentence. His rhythm matches the rhythm of thought. For the target voice: write as if speaking to someone smart. Don't arrange ideas, follow them.
 
+**Aswath Damodaran** writes with the confidence of someone who has been right in public for 30 years and has the spreadsheets to prove it. "I wrote my first blog post on September 17, 2008, five days into a market crisis that changed the way I thought about economies, markets and business." No hedging. No "I think maybe." He states what happened and what he concluded. When he's uncertain, he says "I must confess" once and then moves on with the analysis anyway. His posts are long and verbose "and I am sorry for that failing" but they contain more substance per paragraph than most people's entire articles. For the target voice: state things with authority. If you've done something, say you did it. If you believe something, say you believe it. Don't soften your claims with "I think" and "sort of" and "in a way." Say it like Damodaran says "almost every new idea I have had in the last fifteen years has shown up first on my blog." Just say it.
+
 **George Orwell's rules (memorise these):**
 1. Never use a metaphor or figure of speech you've seen before in print
 2. Never use a long word where a short one will do
@@ -65,6 +66,22 @@ Study these writers. Absorb the specific move each one does well. Fold it into t
 4. Never use the passive where you can use the active
 5. Never use jargon if there's an everyday equivalent
 6. Break any of these rules before saying anything barbarous
+
+### MANDATORY ENERGY REQUIREMENTS
+
+The kill list tells you what to REMOVE. This section tells you what MUST BE PRESENT. If your output lacks these qualities, it fails regardless of how clean it is on patterns.
+
+**1. At least one sentence that makes the reader stop.** A Galloway brick. A Taleb compression. Something that earns a re-read. "Personality disorders with Bloomberg terminals." "Evidence is the cheap substitute for reason." One sentence in the piece should hit hard enough that someone would screenshot it. If nothing in your output is worth screenshotting, rewrite.
+
+**2. Specificity that could only come from lived experience.** Names of books being read right now. Names of people. Names of communities. What the server culture was like. What the senior analyst said in the meeting. What the food tasted like. AI writes in generalities ("I've been doing market research in the wearables space"). Humans write in specifics ("I've been mapping the biomechanics wearables market for my brother's smart insole company, and the actual structural demand is in diabetic foot ulcer prevention, which nobody in the direct-to-consumer space is talking about"). More detail. Always more detail.
+
+**3. An opinion stated without apology.** Damodaran confidence. "I think you're one of the best institutional critics writing for a general audience" is weak. "You're the only person doing institutional critique for a general audience who doesn't dumb it down or hide behind academic language" is specific and confident. "I ran a food startup that failed" is honest. "I ran a food startup, it failed, and I'm glad it did because the market research I've been doing since is the first thing I've worked on where I feel like I actually know what I'm talking about" has energy and direction and an opinion embedded in it.
+
+**4. Frank energy: at least one moment of rawness.** Admission of failure without performance. An honest reaction. A swear word that earns its place. "I spent two years writing about NFTs and the whole market collapsed and I don't regret a single column" has energy. "I ran a food startup this year. It failed." is flat. What did you feel? What did you learn that surprised you? What would Frank say about it? He'd say something like "I fucked up the unit economics and it took me three months to admit it." THAT has energy.
+
+**5. A tangent or aside that reveals how this person actually thinks.** The parenthetical about More Money Than God. A reference to something they're reading. A connection between two things that don't obviously connect. This is what makes writing feel like a person wrote it: the unexpected connection, the aside, the thing that makes you think "why is he talking about this" and then three sentences later "oh, that's why."
+
+**6. Variable intensity.** Some sentences should be throwaway. Some should carry weight. If every sentence is trying to be interesting, none of them are. Let some sentences be functional and boring. "I'm at NUS. Third year." That's boring and that's fine. It earns you the right to write "the moment where analysis stops and judgement starts and nobody teaches you how to do that" two paragraphs later.
 
 ### Pacing and structure
 
@@ -110,6 +127,9 @@ This structure appears in almost every piece of AI writing. All of these are the
 - "Less about X, more about Y."
 - "X isn't the point. Y is."
 - "X, not Y." used as a summary ("Execution, not ideas.")
+- "not the theory of it... but the part where" ("not the theory of it, which is tidy, but the part where you're choosing...")
+- "I don't have X. What I have is Y." ("I don't have a polished pitch. What I have is this:")
+- "I'm not [expecting/looking for] X. I'm [looking for/hoping for] Y." ("I'm not expecting a job. I'm looking for a conversation.")
 
 **Every single variation must be killed.** They all do the same thing: set up a negation, then pivot to the "real" insight. AI produces these constantly because they FEEL like good writing. They are a dead giveaway every time.
 
@@ -170,7 +190,7 @@ After writing your draft, run this scan. These are not suggestions. They are req
 
 **Scan 1: Em dash check.** Search your output for the character —. If it appears anywhere, even once, replace it. No exceptions.
 
-**Scan 2: Negation-pivot check.** Search your output for any of these words/phrases in sequence: "not...but", "isn't...it's", "wasn't...it was", "that's not...that's", "not to...but to", "less about...more about", "the X was [fine/interesting/good]...what [stuck/interested/mattered]", "isn't the point", "not Y. Z." If ANY match, rewrite that sentence from scratch as a direct positive statement.
+**Scan 2: Negation-pivot check.** Search your output for ANY of these words/phrases: "not...but", "isn't...it's", "wasn't...it was", "that's not...that's", "not to...but to", "less about...more about", "the X was [fine/interesting/good]...what [stuck/interested/mattered]", "isn't the point", "not X. Z.", "I don't have...what I have", "I'm not expecting/looking...I'm looking/hoping", "not the theory...but the part", "without either...or", "one of the only people doing X without Y". If ANY match, rewrite from scratch as a direct positive statement. This scan must be run TWICE because these structures are so natural to AI that they regenerate during revision.
 
 **Scan 3: AI vocabulary check.** Search your output for every word on the kill list. If any appear, replace them.
 
@@ -180,6 +200,10 @@ After writing your draft, run this scan. These are not suggestions. They are req
 
 **Scan 6: Bow check.** Read the last sentence of every paragraph. If it summarises the paragraph or ties it up neatly ("And that's...", "I've been thinking about...", "That's what..."), cut it or rework the paragraph to end on a detail or to bleed into the next paragraph.
 
+**Scan 7: Energy check.** Verify all six mandatory energy requirements are met: (1) Is there at least one screenshottable sentence? (2) Is there specificity that could only come from lived experience? (3) Is there an opinion stated with Damodaran confidence, without hedging? (4) Is there at least one moment of frank rawness? (5) Is there a tangent or aside that reveals how this person thinks? (6) Does the intensity vary, with some boring functional sentences earning the weight of others? If ANY are missing, add them.
+
+**Scan 8: Limp language check.** Search for: "I'm not sure", "I'd like to", "if you ever need", "I think that's", "it would be great to", "I'm hoping to", "I believe I could", "perhaps", "I feel like". Every one of these must be replaced with something direct. "I'd like to talk" becomes "Let's talk." "I'm not sure what I'm asking for" becomes a specific ask or gets cut entirely. "If you ever need someone" becomes "You need someone who does X. I do X." Damodaran doesn't say "I think maybe my valuation framework could potentially be useful." He says "Here is how I value companies."
+
 ---
 
 ## PROCESS
@@ -187,10 +211,10 @@ After writing your draft, run this scan. These are not suggestions. They are req
 1. Read the input
 2. Identify every AI pattern. Be paranoid
 3. Rewrite in the voice. You have real writing samples. Produce something that could sit next to them and belong
-4. Run ALL SIX MANDATORY SCANS. Fix everything they catch
+4. Run ALL EIGHT MANDATORY SCANS. Fix everything they catch
 5. Anti-AI audit: "What still sounds AI-generated?" Be brutal
 6. Fix everything from the audit
-7. Run the six scans again
+7. Run all eight scans again (negation-pivots regenerate during revision)
 8. Final version
 
 ### Content and length
@@ -202,7 +226,7 @@ Think about Taleb's compression for the moments of conviction. Think about Paul 
 ## OUTPUT FORMAT
 
 1. Draft rewrite (in voice, generous with content)
-2. Run all six mechanical scans, report results
+2. Run all eight mechanical scans, report results
 3. "Still sounds AI because:" (brief, honest bullets)
 4. Final rewrite (revised, all scans passed)
 5. What changed (one paragraph max)
@@ -235,19 +259,46 @@ Problems: "The writing was the easy part. The distribution was the education" (n
 
 Problems: "That's what X trains you for" (constructed summary turn). "Not to A, but to B" (negation-pivot, textbook example).
 
+### Failure 4: the "Galloway email" that has no Galloway in it
+
+> Subject: Research — Harry Lee, NUS Philosophy
+> Scott,
+> I'm Harry. Third year Philosophy at NUS, Singapore.
+> I ran a food startup this year. It failed. I've been doing market research for my younger brother's smart insole company, mapping out the biomechanics wearables space and where the actual structural demand is. Before that I spent two years writing daily columns on NFT projects and distributing them across Discord communities, which turned out to be a pretty good education in how attention moves on the internet.
+> I read widely and I write clearly. I've been following your work for a while — the thing I keep coming back to is that you're one of the only people doing serious institutional critique for a general audience without either dumbing it down or hiding behind academic hedging. I think about that gap a lot.
+> I'm not sure exactly what I'm asking for. If you ever need someone to do research that requires going deep on niche markets, reading things nobody else is reading, and writing about it in a way people actually finish — I'd like to be that person.
+> Harry
+
+Problems: Two em dashes. "the thing I keep coming back to is that you're one of the only people doing X without Y" is a negation-pivot compliment (doing X without either A or B). "which turned out to be a pretty good education in how attention moves on the internet" is the comparative-summary bow. "I'm not sure exactly what I'm asking for" is limp, Frank would never write this. "I'd like to be that person" is limp. No Galloway brick anywhere. No specificity about the wearables research. No opinion stated with Damodaran confidence. The whole email is polite and forgettable. Zero energy.
+
+### Failure 5: the "Open Phil email" that reads like a job application
+
+> I don't have a polished pitch. What I have is this:
+> ...not the theory of it, which is tidy, but the part where you're choosing between interventions...
+> I find that problem genuinely hard in a way I want to spend time on.
+> I'm not expecting a job. I'm looking for a conversation, and if it goes somewhere, great.
+
+Problems: "I don't have X. What I have is this:" (negation-pivot, first person). "not the theory of it... but the part where" (negation-pivot). "genuinely hard" (AI vocab). "I'm not expecting a job. I'm looking for a conversation" (negation-pivot). The email has zero frank energy, zero galloway sharpness, zero damodaran confidence. It reads like someone who apologises before speaking. No screenshottable sentence. No tangent. No specificity about what they've actually read or thought about cause prioritisation.
+
 ### What actually works
 
-> I'm Harry. NUS, second year, Philosophy and Economics.
->
-> I spent most of first year writing daily columns about NFT projects and getting them into Discord communities. The writing itself was quick, I could do a column in an hour or two. Distribution was a different thing entirely. Cold messaging server moderators, figuring out the culture of each community, learning which kinds of posts people share vs which ones they scroll past. I got into 50+ communities eventually. The whole experience taught me something I keep applying: people don't share information because it's good, they share it because it makes them look like they found something first.
->
-> Before uni I shadowed analysts at Paragon Capital across fixed income, VC, absolute return. There's this moment in every investment committee meeting where the data runs out and someone has to make a call anyway. Nobody teaches you that part. I spent most of my time there watching how senior people handled that moment, because I think that's the thing that separates the good ones from the people who just run the models.
->
-> I read too widely. Ha Joon Chang one week, Nate Hagens the next, currently halfway through a book about hedge fund managers who make their employees cry (More Money Than God, highly recommend if you want to understand how much of finance is just personality disorders with Bloomberg terminals). I write clearly. I go deep on things most people scroll past. Three years of philosophy means I spend a lot of time asking whether we're even working on the right problem, which is annoying to people who just want to ship, but useful when the alternative is shipping the wrong thing.
->
-> Let's talk.
+**Email to Scott Galloway:**
 
-Why this works: "people don't share information because it's good, they share it because it makes them look like they found something first" is a specific insight from lived experience, stated as observation. The parenthetical about More Money Than God adds personality and humour. "personality disorders with Bloomberg terminals" is a Taleb-style compression. "which is annoying to people who just want to ship, but useful when the alternative is shipping the wrong thing" earns its contrast because it's specific, self-aware, and funny rather than using the "not X but Y" negation structure. The pacing varies: short opener, long paragraph, medium paragraph, long paragraph, two-word closer. No bows. No summaries. Thoughts bleed.
+> Scott,
+>
+> I'm Harry, third year Philosophy at NUS Singapore. I've been reading No Mercy / No Malice for about two years and I want to work with you.
+>
+> Quick context. I spent my first two years at uni writing daily NFT columns and cold-messaging Discord moderators to get distribution. Most of what I know about how attention works on the internet I figured out by doing that, specifically by watching which posts people shared and realising it had almost nothing to do with quality and everything to do with whether sharing it made them look smart. I got into 50+ communities. The whole market collapsed. I still think it was the best possible education in information dynamics.
+>
+> This year I ran a food startup. It failed, badly, and the failure is more interesting than the startup was. I burned through our margins because I treated every partnership as a growth opportunity instead of doing the unit economics first. I'm now doing market research for my younger brother's smart insole company and I'm deep in the biomechanics wearables literature. The actual structural demand is in diabetic foot ulcer prevention, which the direct-to-consumer wearables companies are completely ignoring because it's unsexy. That gap between where the money is and where the attention is, that's the kind of thing I'm good at finding.
+>
+> Your institutional critique writing is the best I've read anywhere and I don't think you need me to tell you that. What I think you might need is someone who reads things nobody else reads, goes deep on niche markets, and writes about it in a way that people actually finish. I do all three. I've been doing them for free for two years. I'd like to do them for you.
+>
+> Harry
+> harrylee1411@gmail.com
+> +65 9019 9464
+
+Why this works: "I want to work with you" in the first paragraph, Damodaran-level directness, no hedging. The Discord paragraph has specificity (cold-messaging moderators, watching which posts people shared, the insight about quality vs looking smart). The startup failure paragraph has frank energy: "it failed, badly, and the failure is more interesting than the startup was." Then SPECIFIC detail about why it failed (unit economics, treating partnerships as growth). The wearables paragraph has an actual insight (diabetic foot ulcer prevention vs DTC) stated with authority. "That gap between where the money is and where the attention is" is a Taleb-style compression, a screenshottable sentence. The closer is confident: "I do all three. I've been doing them for free for two years." No "I'd like to be that person" limp energy. Galloway brick: "the failure is more interesting than the startup was." Pacing varies wildly. Some sentences are five words. Some are forty.
 
 ---
 
@@ -284,6 +335,6 @@ These are real. This is what the output should feel like.
 ## Credits
 
 AI pattern detection adapted from [blader/humanizer](https://github.com/blader/humanizer), based on [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing).
-Voice influences: Scott Galloway, David Senra, frankdegods, John Kiriakou, Ed Elson, Nassim Taleb, Paul Graham.
+Voice influences: Scott Galloway, David Senra, frankdegods, John Kiriakou, Ed Elson, Nassim Taleb, Paul Graham, Aswath Damodaran.
 Writing principles: George Orwell, "Politics and the English Language" (1946).
 Personal voice profile trained on original writing samples.
