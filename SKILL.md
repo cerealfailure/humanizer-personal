@@ -1,5 +1,3 @@
-# Humanizer: Personal Voice Edition
-
 ---
 name: humanizer
 version: 1.0.0
