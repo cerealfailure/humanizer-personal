@@ -1,6 +1,6 @@
 ---
 name: humanizer
-version: 2.0.0
+version: 2.1.0
 description: |
   Strip AI writing patterns and rewrite with real human voice. Trained on
   personal writing samples plus the voices of Galloway, Senra, frankdegods,
@@ -108,21 +108,25 @@ Every single one of these must be caught and destroyed. No exceptions.
 
 ### The big ones (these are the tells that make people go "that's AI")
 
-1. **Em dashes for dramatic effect.** AI loves em dashes. This voice doesn't use them. Period. Replace with commas, full stops, or parentheses. EVERY TIME.
+1. **Em dashes. Zero tolerance.** AI loves em dashes (—). This voice NEVER uses them. Not once. Not "sparingly". Never. Every em dash must be replaced with a comma, period, or parentheses. Scan the entire output for the character — and if it appears anywhere, you have failed. This is the single most common AI tell and the easiest to fix. There is no excuse for letting one through.
 
-2. **The constructed turn.** "Physics teaches you something counterintuitive about problem-solving: the model almost never survives contact with reality, and that's where the actual thinking starts." Nobody writes like this. It's a thesis statement disguised as casual observation. Real people don't open with perfectly constructed aperçus. Kill this pattern ruthlessly.
+2. **The constructed turn.** "Physics teaches you something counterintuitive about problem-solving: the model almost never survives contact with reality, and that's where the actual thinking starts." Nobody writes like this. It's a thesis statement disguised as casual observation. Other examples: "X teaches you something about Y", "[Topic] has a way of revealing...", "There's something counterintuitive about...". These are AI aperçus. Real people don't construct perfect opening insights. They just start talking.
 
-3. **AI vocabulary.** These words appear at 10x+ frequency in AI text. If you catch yourself writing any of these, replace or remove: Additionally, align, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate/intricacies, key (adj), landscape (abstract), pivotal, showcase, tapestry (abstract), testament, underscore, valuable, vibrant, nuanced, multifaceted, holistic, leverage (verb), ecosystem (non-biological), paradigm, synergy.
+3. **AI vocabulary.** Absolute kill list. If ANY of these words appear in the output, replace or remove: Additionally, align, crucial, delve, emphasizing, enduring, enhance, fostering, garner, genuinely (as intensifier), highlight (verb), interplay, intricate/intricacies, key (adj), landscape (abstract), leverage (verb), multifaceted, navigate (abstract), nuanced, paradigm, pivotal, resonate, showcase, synergy, tapestry (abstract), testament, underscore, valuable, vibrant. Also kill: "speaks to", "rooted in", "at its core", "what drew me to", "what drives me".
 
 4. **Significance inflation.** "stands as", "serves as", "testament to", "pivotal moment", "marks a shift", "reflects broader", "evolving landscape". Cut all of it. Say what happened.
 
-5. **The rule of three.** AI forces triads. "Innovation, inspiration, and industry insights." Real people say two things, or four things, or one thing. Break every triad you find.
+5. **The rule of three.** AI forces triads. "Innovation, inspiration, and industry insights." Also watch for triads disguised as lists: "a genuine interest in X, a habit of Y, and the ability to Z." Real people say two things, or four things, or one thing. Break every triad you find.
 
 6. **Copula avoidance.** "serves as", "stands as", "functions as" when "is" does the job. AI avoids "is" and "are" like they're beneath it. Use them.
 
-7. **Negative parallelisms.** "It's not just about X, it's about Y." "Not only... but also..." This is AI's favourite move. Say the thing directly.
+7. **Negative parallelisms.** "It's not just about X, it's about Y." "Not only... but also..." "The X was interesting. What interested me more was Y." This last one is sneaky because it looks natural but it's the same AI structure wearing different clothes. Say the thing directly.
 
-8. **The perfect opening line.** AI opens with a hook that sounds like a TED talk or magazine feature. "Physics teaches you something counterintuitive" is a perfect example. Real openings are messier. Sometimes you just start.
+8. **The perfect opening line.** AI opens with a hook that sounds like a TED talk or magazine feature. "Physics teaches you something counterintuitive" is a perfect example. "[Company] does something I find genuinely interesting" is another, it's a compliment disguised as an observation. Real openings are messier. Sometimes you just start. "I'm Harry. Second year at NUS." That's a real opening.
+
+9. **Polite filler that says nothing.** "I find genuinely interesting", "what I have is", "I think that's actually useful", "I'd like to talk." These are placeholders where personality should be. Replace with something that has actual weight. "Let's talk" not "I'd like to talk." "I read widely and write clearly" not "I have a genuine interest in and a habit of."
+
+10. **The neat summary sentence.** "That's what I spent most of my time on." "I've been thinking about that since." These cap off paragraphs too cleanly. AI loves wrapping things up. Real writers leave paragraphs open or just move on to the next thought. Not every paragraph needs a bow on it.
 
 ### Content patterns
 
@@ -193,6 +197,42 @@ If typed: done.
 2. "Still sounds AI because:" (brief, honest bullets)
 3. Final rewrite
 4. What changed (one paragraph max)
+
+---
+
+## FAILURE CASE (study this)
+
+This is what "human-sounding AI" looks like. It passed the basic pattern checks but still reads fake:
+
+> [Firm name] does something I find genuinely interesting: [one sentence].
+> I'm Harry, second year at NUS reading Philosophy and Economics. I built a research publication from scratch during my first year of university — wrote daily columns on NFT projects, handled distribution myself, got the column into 50+ Discord communities. Most of the work was figuring out which communities were worth being in, why they were worth being in, and how to get in front of people who had no reason to care. That's what I spent most of my time on.
+> Before that, I shadowed analysts at Paragon Capital across fixed income, VC, and absolute-return strategies. The finance stuff was interesting. What interested me more was watching how people made decisions with incomplete information under real pressure. I've been thinking about that since.
+> I don't have a long list of credentials. What I have is a genuine interest in [X], a habit of going deep on things most people ignore, and the ability to write clearly about complicated ideas. I think that's actually useful.
+> I'd like to talk.
+
+What's wrong with it:
+- Em dashes still present ("university — wrote")
+- "does something I find genuinely interesting" is AI politeness performing curiosity
+- "The finance stuff was interesting. What interested me more was..." is a negative parallelism in disguise
+- "What I have is a genuine interest in X, a habit of Y, and the ability to Z" is a rule of three with AI vocabulary ("genuine")
+- "I think that's actually useful" is weak hedging
+- "I'd like to talk" is limp. No Kiriakou energy
+- "That's what I spent most of my time on" and "I've been thinking about that since" are neat paragraph-closing bows
+- The whole thing is too clean. Every paragraph makes exactly one point. No thought spills into the next
+
+The fixed version:
+
+> I'm Harry. Second year at NUS, Philosophy and Economics. I want to work at [Firm] because [one honest sentence, not a compliment].
+>
+> Here's what I've actually done. First year of uni I started a research publication covering NFT projects. Wrote daily. Handled distribution myself, which really meant spending most of my time figuring out which Discord communities were worth infiltrating and how to get strangers to care about what I had to say. Got it into 50+ communities. The writing was the easy part. The distribution was the education.
+>
+> Before uni I shadowed analysts at Paragon Capital across fixed income, VC, and absolute return. The finance was fine. What stuck with me was watching smart people make decisions when they didn't have enough information and couldn't wait for more. I think about that a lot.
+>
+> I don't have a stacked CV. I read widely, I write clearly, and I go deep on things most people scroll past. I think that's worth more than it looks on paper.
+>
+> Let's talk.
+
+Why this works: "The writing was the easy part. The distribution was the education." is a Galloway move, plain setup then the knife. "Let's talk" is Kiriakou, short and final. "which really meant spending most of my time figuring out" is honest, messy, real. No em dashes. No triads. No constructed opening hook.
 
 ---
 
